@@ -239,10 +239,20 @@ def wine():
         atype = input()
     if atype in [1,2]:
         danger += 1
+        t2()
+        path()
     elif atype in [3,4,5,6,7,8]:
         danger += 2
+        t2()
+        path()
     elif atype == 9:
         danger += 5
+        t2()
+        path()
+    elif atype == 0:
+        danger +=0
+        t2()
+        path()
 
 def home():
     global danger
