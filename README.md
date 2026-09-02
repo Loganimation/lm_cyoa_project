@@ -1,10 +1,12 @@
 #   PREGANCY SIMULATOR
 
-##  AN CYOA TYPE GAME THING
-___
+###  A CYOA TYPE GAME THING
+#### BY LOGANIMATION / LOGAN MYERS
+____
+*Estimated time to complete: ~4 minutes*
 
-Estimated time to complete: ~4 minutes
+This game realistically simulates what its like to be a pregnant woman and the temptations you must face in order to give birth safely. There are 5 possible endings you can collect, have fun or something!
 
-This game realistically simulates what its like to be a pregnant woman and the tempations you must face in order to give birth safely
++ THIS GAME IS CURRENTLY IN ALPHA TESTING RIGHT NOW
 
-THIS GAME IS NOT RECOMMENDED FOR YOUNGER AUDIENCES (12+)
+**NOT RECOMMENDED FOR YOUNGER AUDIENCES (12+)**
