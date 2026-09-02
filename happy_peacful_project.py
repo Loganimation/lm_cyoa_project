@@ -21,7 +21,7 @@ def stupid_ending():
     print("Your pure and utter stupidity at a single choice option was enough to kill you")
     t3()
     print()
-    print("SUBENDING #1:")
+    print("ENDING #4:")
     t2()
     print("Apitimy of Stupidity")
     print()
@@ -47,7 +47,7 @@ def pregnantminigame():
     global valid_keys
     print('BEFORE YOU BEGIN THE MINIGAME PLEASE TURN ON CAPS LOCK')
     t4()
-    while keys <= 10:
+    while keys < 10:
         selected_key = random.choice(valid_keys)
         user_key = input(('PUSH'+' '+selected_key+'!     '))
         if user_key == selected_key:
@@ -59,8 +59,57 @@ def pregnantminigame():
     print("You gave birth")
     t2()
     if danger == 0:
-        print('Doctor Nathan Wingard exclaims, '+'"ITS A '+random.choice("BOY","GIRL")+'!"')
-    
+        gong = random.randint(1,2)
+        if gong == 1:
+            print("Doctor Nathan Wingrad exclaims, 'ITS A BOY!'")
+        if gong == 2:
+            print("Doctor Nathan Wingrad exclaims, 'ITS A GIRL!'")
+        t2()
+        print("You played by the rules and was given the gift of life or something")
+        t2()
+        print("Have fun raising your kid or whatever")
+        t3()
+        print()
+        print("Ending 1:")
+        t2()
+        print("The Intentional Way to Play the Game Ending or Something Like That")
+    elif danger >= 1:
+        if danger >= 10:
+            print("Doctor Nathan Wingard exclaims, 'OH MY GOD ITS A DEMON!'")
+            t2()
+            print("What the phonk did you do for this to happen")
+            t3()
+            print("Then it comes back to you...")
+            t4()
+            print("The Caffine Calamity...")
+            t4()
+            print("The Hellfire Hangover...")
+            t4()
+            print("You had created the recipe for disaster unknowingly")
+            t3()
+            print("The 'baby' turns its head 180 degrees to stare into your soul")
+            t3()
+            print("Then the ground opens up below you to suck you in to the deepest layers of hell")
+            t3()
+            print("In the end fate never turns up in your favor...")
+            t3()
+            print()
+            print("Ending 3:")
+            t2()
+            print("Sacrifice")
+            print()
+        else:
+            print("Doctor Nathan Wingard exclaims, 'OH MY GOD ITS DEAD!'")
+            t2()
+            print("Your poor descision making led to the death of your child")
+            t2()
+            print("Now you have to spend the rest of your life knowing that the death of your child is on your hands")
+            t3()
+            print()
+            print("Ending 2:")
+            t2()
+            print("Bad Parenting")
+            print()
 def BIRTH():
     print("Right as you set off to go, you feel something wet")
     t2()
@@ -76,7 +125,7 @@ def groc():
     global danger
     global visits
     visits += 1
-    if visits >= 2 and random.choice([1,2]) == 1:
+    if visits > 2 and random.choice([1,2]) == 1:
         BIRTH()
     else:
         print("Grocery store isn't programmed yet, sorry :(")
@@ -86,7 +135,7 @@ def coff():
     global danger
     global visits
     visits += 1
-    if visits >= 2 and random.choice([1,2]) == 1:
+    if visits > 2 and random.choice([1,2]) == 1:
         if visits >= 5:
             BIRTH()
     else:
@@ -111,7 +160,7 @@ def coff():
         t1()
         print("6 to The Caffine Calamity")
         t1()
-        print("Actually I don't want coffee")
+        print("7 to Actually I don't want coffee")
         ctype = input()
         if ctype == "1":
             danger += 0
@@ -134,7 +183,7 @@ def coff():
             t2()
             path()
         elif ctype == "6":
-            danger += 1000000
+            danger += 5
             print("The pure amount of caffine you've consumed is nausuating, and to any normal person... fatal")
             t3()
             print("Luckily you aren't normal and fate had other plans for you")
@@ -156,17 +205,50 @@ def wine():
     global danger
     global visits
     visits += 1
-    if visits >= 2 and random.choice([1,2]) == 1:
+    if visits > 2 and random.choice([1,2]) == 1:
         BIRTH()
     else:
-        print("Winery isn't programmed yet, sorry :(")
-        path()
+        t2()
+        print("You go to the winery")
+        t2()
+        print("You walk up to register so you can like... get alchohol")
+        t2()
+        print("The lady at the register lasily asks what you would like to order")
+        t3()
+        print("What would you like to order?")
+        t1()
+        print("1 to Wine")
+        t1()
+        print("2 to Beer")
+        t1()
+        print("3 to Vodka")
+        t1()
+        print("4 to Whiskey")
+        t1()
+        print("5 to Rum")
+        t1()
+        print("6 to Tequila")
+        t1()
+        print("7 to Gin")
+        t1()
+        print("8 to Brandy")
+        t1()
+        print("9 to Hellfire Hangover")
+        t1()
+        print("0 to Actually I don't want aclhohol")
+        atype = input()
+    if atype in [1,2]:
+        danger += 1
+    elif atype in [3,4,5,6,7,8]:
+        danger += 2
+    elif atype == 9:
+        danger += 5
 
 def home():
     global danger
     global visits
     visits += 1
-    if visits >= 2 and random.choice([1,2]) == 1:
+    if visits > 2 and random.choice([1,2]) == 1:
         BIRTH()
     else:
         print("Home isn't programmed yet, sorry :(")
@@ -197,7 +279,7 @@ def path():
 ## Start ##
 print()
 t1()
-print("Pregnancy Adventures")
+print("Pregnancy Adventures [ALPHA TESTING]")
 t2()
 print("Created by Loganimation / Logan Myers")
 print()
@@ -225,7 +307,11 @@ elif start == "2":
     print("You don't even get the dignity of an introduction")
     t2()
     path()
-elif start == 'pmini':
+elif start == 'pmini': #debug
+    da = input("danger amount?")
+    danger = int(da)
     BIRTH()
 else:
     bro()
+t4()
+print("FINAL DANGER SCORE:", danger)
