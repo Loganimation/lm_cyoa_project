@@ -125,7 +125,7 @@ def groc():
     global danger
     global visits
     visits += 1
-    if visits > 2 and random.choice([1,2]) == 1:
+    if visits > 3:
         BIRTH()
     else:
         print("Grocery store isn't programmed yet, sorry :(")
@@ -135,7 +135,7 @@ def coff():
     global danger
     global visits
     visits += 1
-    if visits > 2 and random.choice([1,2]) == 1:
+    if visits > 3:
         if visits >= 5:
             BIRTH()
     else:
@@ -205,7 +205,7 @@ def wine():
     global danger
     global visits
     visits += 1
-    if visits > 2 and random.choice([1,2]) == 1:
+    if visits > 3:
         BIRTH()
     else:
         t2()
@@ -315,3 +315,4 @@ else:
     bro()
 t4()
 print("FINAL DANGER SCORE:", danger)
+print()
