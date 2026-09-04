@@ -451,7 +451,7 @@ if start == "1":
     t2()
     print("By the way, what was your name?")
     input()
-    t3()
+    t2()
     print("Cool, not like it does anything but cool")
     t2()
     path()
