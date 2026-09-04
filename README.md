@@ -16,3 +16,4 @@ This game realistically simulates what its like to be a pregnant woman and the t
 +  Fate
 
 **NOT RECOMMENDED FOR YOUNGER AUDIENCES (12+)**
+**BEST PLAYED WITH TERMINAL FULL WINDOWED**
