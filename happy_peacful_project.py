@@ -72,7 +72,7 @@ def pregnantminigame():
         user_key = input(('PUSH'+' '+selected_key+'!     '))
         if user_key == selected_key:
             keys += 1
-            t1()
+        t1()
     t2()
     print("After all the pain of childbirth, it finally happened...")
     t3()
@@ -129,7 +129,7 @@ def pregnantminigame():
             print("Irresponsible")
             print()
 def BIRTH():
-    print("Right as you set off to go, you feel something wet")
+    print("Right as you set off to go, you feel something strange")
     t2()
     print("Your water broke")
     t2()
@@ -300,7 +300,7 @@ def wine():
         t1()
         print("8 to Brandy")
         t1()
-        print("9 to Hellfire Hangover")
+        print("9 to The Hellfire Hangover")
         t1()
         print("0 to Actually I don't want aclhohol")
         atype = input()
@@ -429,7 +429,7 @@ def path(): #just wanted to point out 2 and 3 are REALLY similar just by the fac
 ## Start ##
 print()
 t1()
-print("Pregnancy Adventures [ALPHA TESTING]")
+print("Pregnancy Adventures")
 t2()
 print("Created by Loganimation / Logan Myers")
 print()
