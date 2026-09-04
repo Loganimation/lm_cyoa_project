@@ -1,4 +1,4 @@
-#  ![Pregnancy Simulator](https://see.fontimg.com/api/rf5/G36qP/NzVhMWI3OTcwNmE5NDk4ODlmN2Y4MjdiYWQxMGE5OTMub3Rm/UHJlZ25hbmN5IFNpbXVsYXRvcg/pregnant-demo.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65)
+#  ![Pregnancy Simulator](image.png)
 #### BY LOGANIMATION / LOGAN MYERS
 ____
 *Estimated time to complete: ~4 minutes*
