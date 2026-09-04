@@ -108,7 +108,7 @@ def pregnantminigame():
             print()
             print("Ending 2:")
             t2()
-            print("Bad Parenting")
+            print("Irresponsible")
             print()
 def BIRTH():
     print("Right as you set off to go, you feel something wet")
@@ -125,7 +125,7 @@ def groc():
     global danger
     global visits
     visits += 1
-    if visits > 3:
+    if visits >= 5:
         BIRTH()
     else:
         print("Grocery store isn't programmed yet, sorry :(")
@@ -135,9 +135,8 @@ def coff():
     global danger
     global visits
     visits += 1
-    if visits > 3:
-        if visits >= 5:
-            BIRTH()
+    if visits >= 5:
+        BIRTH()
     else:
         t2()
         print("You go to the coffee shop")
@@ -205,7 +204,7 @@ def wine():
     global danger
     global visits
     visits += 1
-    if visits > 3:
+    if visits >= 5:
         BIRTH()
     else:
         t2()
@@ -237,43 +236,116 @@ def wine():
         t1()
         print("0 to Actually I don't want aclhohol")
         atype = input()
-    if atype in [1,2]:
-        danger += 1
-        t2()
-        path()
-    elif atype in [3,4,5,6,7,8]:
-        danger += 2
-        t2()
-        path()
-    elif atype == 9:
-        danger += 5
-        t2()
-        path()
-    elif atype == 0:
-        danger +=0
-        t2()
-        path()
+        if atype in ["1","2"]:
+            danger += 1
+            print("The deep tones and colorful notes of the alchohol soothe your nerves")
+            t3()
+            print("The pregnancy had been causing you so much stress but it all seems to drift away")
+            t3()
+            print("Every sip is a another steep towards heaven")
+            t2()
+            print("You exit the winery, satisified")
+            t2()
+            path()
+        elif atype in ["3","4","5","6","7","8"]:
+            danger += 2
+            print("The flavor is so bitter its almost repulsive")
+            t2()
+            print("You almost want to spit it out by how disgusting it is")
+            t3()
+            print("You decide though that you would rather not waste your money")
+            t3()
+            print("So you breathe in slowly, then chug the rest")
+            t2()
+            print("You exit the winery, disgusted")
+            t2()
+            path()
+        elif atype == "9":
+            danger += 5
+            print("The taste is immediate and powerful")
+            t2()
+            print("It tastes of pure concentrated poison, and to any normal person this would be... fatal")
+            t3()
+            print("Luckily you aren't normal and fate had other plans for you")
+            t2()
+            print("By some miracle, you leave the winery")
+            t2()
+            path()
+        elif atype == "0":
+            danger += 0
+            print("You came all this way just to not buy anything")
+            t2()
+            print("You leave the winery, disappointed")
+            t2()
+            path()
+        else:
+            stupid_ending()
 
 def home():
     global danger
     global visits
     visits += 1
-    if visits > 2 and random.choice([1,2]) == 1:
+    if visits >= 5:
         BIRTH()
     else:
-        print("Home isn't programmed yet, sorry :(")
-        path()
+        print("You go back home")
+        t2()
+        print("You don't really know what to do right now")
+        t2()
+        print("Television or a nap right now would be really good")
+        t2()
+        print("What would like to do?")
+        t1()
+        print("1 to Nap")
+        t1()
+        print("2 to Television")
+        h1type = input()
+        if h1type == "1":
+            print("You take a REALLY boring nap")
+            t2()
+            print("I don't have any words to like describe this its just a nap")
+            t2()
+            path()
+        elif h1type == "2":
+            print("What do you want to watch?")
+            t1()
+            print("1 to Breaking Bad")
+            t1()
+            print("2 to The Secret Lives of Mormon Wives")
+            h2type = input()
+            if h2type == "1":
+                danger += 0
+                print("This might just be the best show you have ever watched in your life")
+                t2()
+                print("Its just so peak even the baby likes it")
+                t2()
+                print("You leave the house")
+                t2()
+                path()
+            elif h2type == "2":
+                danger += 1
+                print("The moment you open up the show, your baby begins kicking so aggressively you have to stop watching")
+                t3()
+                print("Maybe watching 'The Secret Liveso of Mormon Wives' wasn't your best idea")
+                t3()
+                print('You leave the house')
+                t2()
+                path()
+            else:
+                stupid_ending()
+        else:
+            stupid_ending()
 
-def path():
+def path(): #just wanted to point out 2 and 3 are REALLY similar just by the fact they are already in the same industry
     print("Where would you like to go?")
     t1()
-    print("1 to Grocery Store")
+    print("1 to Grocery Store")     #not started
     t1()
-    print("2 to Coffee Shop")
+    print("2 to Coffee Shop")   #done
     t1()
-    print("3 to Winery")
+    print("3 to Winery")    #done
     t1()
-    print("4 to Home")
+    print("4 to Home")  #done
     move = input()
     if move == "1":
         groc()
