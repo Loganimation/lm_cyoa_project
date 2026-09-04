@@ -1,4 +1,5 @@
 #  ![Pregnancy Simulator](image.png)
+### An choice based adventure game
 #### BY LOGANIMATION / LOGAN MYERS
 ____
 *Estimated time to complete full game with all endings: ~8 minutes*
