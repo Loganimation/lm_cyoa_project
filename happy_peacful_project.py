@@ -1,5 +1,4 @@
-#NOTE This is my second run through of the project. I decided to delete the first run through for a multitude of reasons
-
+#NOTE If you see danger += 0, it doesn't do anything other than help me visualize
 ## VARIABLES
 danger = 0
 visits = 0
@@ -41,7 +40,28 @@ def bro():
     t2()
     print("Manual breathing and blinking")
     print()
-
+def unleashfate():
+    global danger
+    t2()
+    print("You were destined to reach here")
+    t2()
+    print("It doesnt matter what you do")
+    t4()
+    print("This is fate...")
+    t3()
+    print("The innevitable end you have no power to stop")
+    t3()
+    print("You will never know when it happens until it does")
+    t4()
+    print("Are you afraid of fate?")
+    input()
+    t3()
+    print()
+    print("Secret Ending:")
+    t2()
+    print("Fate")
+    print()
+    danger = ""
 def pregnantminigame():
     global keys
     global valid_keys
@@ -58,7 +78,7 @@ def pregnantminigame():
     t3()
     print("You gave birth")
     t2()
-    if danger == 0:
+    if danger < 1:
         gong = random.randint(1,2)
         if gong == 1:
             print("Doctor Nathan Wingrad exclaims, 'ITS A BOY!'")
@@ -74,16 +94,14 @@ def pregnantminigame():
         t2()
         print("The Intentional Way to Play the Game Ending or Something Like That")
     elif danger >= 1:
-        if danger >= 10:
+        if danger >= 20:
             print("Doctor Nathan Wingard exclaims, 'OH MY GOD ITS A DEMON!'")
             t2()
             print("What the phonk did you do for this to happen")
             t3()
             print("Then it comes back to you...")
             t4()
-            print("The Caffine Calamity...")
-            t4()
-            print("The Hellfire Hangover...")
+            print("All the stupid actions you took...")
             t4()
             print("You had created the recipe for disaster unknowingly")
             t3()
@@ -91,12 +109,12 @@ def pregnantminigame():
             t3()
             print("Then the ground opens up below you to suck you in to the deepest layers of hell")
             t3()
-            print("In the end fate never turns up in your favor...")
+            print("In the end FATE never turns up in your favor...")
             t3()
             print()
             print("Ending 3:")
             t2()
-            print("Sacrifice")
+            print("Rituals")
             print()
         else:
             print("Doctor Nathan Wingard exclaims, 'OH MY GOD ITS DEAD!'")
@@ -128,9 +146,59 @@ def groc():
     if visits >= 5:
         BIRTH()
     else:
-        print("Grocery store isn't programmed yet, sorry :(")
-        path()
-
+        print("You enter the grocery store")
+        t2()
+        print("Most people would find the grocery store boring but you are a pregnant woman so its very enticing")
+        t3()
+        print("As your eyes glimmer in the awe at the 25% discounts")
+        t2()
+        print("You accidentally bump into a random lady, causing here to drop and shatter the thing she was holding")
+        t3()
+        print("The lady screams at you, 'Come fight me you cow!'")
+        t2()
+        print("What do you do?")
+        t1()
+        print("1 to Fight")
+        t1()
+        print("2 to Flight")
+        t1()
+        print("3 to Apologize")
+        ftype = input()
+        if ftype == "1":
+            danger += 2
+            print("You miss your throw and she gets the perfect chance to punch back")
+            t2()
+            print("She slams her fist into your stomach")
+            t2()
+            print("The pain is unbearable")
+            t2()
+            print("You yell out, but the woman has already ran away")
+            t2()
+            print("You eventually gather up the strength to leave the grocery store")
+            t2()
+            path()
+        if ftype == "2":
+            danger += 0
+            print("Before she has the chance to react")
+            t2()
+            print("You dart out of the grocery store and escape")
+            t2()
+            print("Thank god thats over!")
+            t2()
+            path()
+        if ftype == "3":
+            danger += 2
+            print("You try to apologize but its as if she didnt even hear it")
+            t2()
+            print("She slams her fist into your stomach")
+            t2()
+            print("The pain is unbearable")
+            t2()
+            print("You yell out, but the woman has already ran away")
+            t2()
+            print("You eventually gather up the strength to leave the grocery store")
+            t2()
+            path()
 def coff():
     global danger
     global visits
@@ -182,7 +250,7 @@ def coff():
             t2()
             path()
         elif ctype == "6":
-            danger += 5
+            danger += 10
             print("The pure amount of caffine you've consumed is nausuating, and to any normal person... fatal")
             t3()
             print("Luckily you aren't normal and fate had other plans for you")
@@ -261,7 +329,7 @@ def wine():
             t2()
             path()
         elif atype == "9":
-            danger += 5
+            danger += 10
             print("The taste is immediate and powerful")
             t2()
             print("It tastes of pure concentrated poison, and to any normal person this would be... fatal")
@@ -371,6 +439,7 @@ t1()
 print("1 to Start")
 t1()
 print("2 to Quit")
+t1()
 start = (input())
 if start == "1":
     t2()
@@ -389,10 +458,8 @@ elif start == "2":
     print("You don't even get the dignity of an introduction")
     t2()
     path()
-elif start == 'pmini': #debug
-    da = input("danger amount?")
-    danger = int(da)
-    BIRTH()
+elif start == 'Fate':
+    unleashfate()
 else:
     bro()
 t4()
