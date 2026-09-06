@@ -394,7 +394,7 @@ def home():
                 danger += 1
                 print("The moment you open up the show, your baby begins kicking so aggressively you have to stop watching")
                 t3()
-                print("Maybe watching 'The Secret Liveso of Mormon Wives' wasn't your best idea")
+                print("Maybe watching 'The Secret Lives of Mormon Wives' wasn't your best idea")
                 t3()
                 print('You leave the house')
                 t2()
