@@ -93,6 +93,7 @@ def pregnantminigame():
         print("Ending 1:")
         t2()
         print("The Intentional Way to Play the Game Ending or Something Like That")
+        print()
     elif danger >= 1:
         if danger >= 20:
             print("Doctor Nathan Wingard exclaims, 'OH MY GOD ITS A DEMON!'")
