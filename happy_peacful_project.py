@@ -40,28 +40,6 @@ def bro():
     t2()
     print("Manual breathing and blinking")
     print()
-def unleashfate():
-    global danger
-    t2()
-    print("You were destined to reach here")
-    t2()
-    print("It doesnt matter what you do")
-    t4()
-    print("This is fate...")
-    t3()
-    print("The innevitable end you have no power to stop")
-    t3()
-    print("You will never know when it happens until it does")
-    t4()
-    print("Are you afraid of fate?")
-    input()
-    t3()
-    print()
-    print("Secret Ending:")
-    t2()
-    print("Fate")
-    print()
-    danger = ""
 def pregnantminigame():
     global keys
     global valid_keys
@@ -464,8 +442,6 @@ elif start == "2":
     print("You don't even get the dignity of an introduction")
     t2()
     path()
-elif start == 'Fate':
-    unleashfate()
 else:
     bro()
 t4()
