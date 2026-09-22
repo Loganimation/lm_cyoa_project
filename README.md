@@ -13,7 +13,6 @@ This game realistically simulates what its like to be a pregnant woman and the t
 +  Apitimy of Stupidity
 ### Secret Endings
 +  Your Special Ending
-+  Fate
 
 **NOT RECOMMENDED FOR YOUNGER AUDIENCES (12+)**
 
